@@ -24,8 +24,87 @@ In the initial face of data cleaning and preparation, we performed the following
 2.	Handling Missing Variables
 3.	Data Cleaning and Formatting
 
-###Exploratory Data Analysis
+### Exploratory Data Analysis
+EDA involves the exploring of Data to answer some Questions about the data such as: 
+Calculating average sales per product and total revenue
+Retrieving Total Salres for each product
+Sales Overview etc
 
-#Data Analysis
+### Data Analysis
+This is where we include some basic lines of codes oe queries or even some of the DAX expression used during the analysis
 
-#Data Visualization
+```SQL
+SELECT*
+FROM[dbo].[Sales Data]
+
+Q1 Retrieve the total sales for each product category
+SELECT Product ,SUM(Quantity*UnitPrice) as Total_Sales
+FROM [dbo].[Sales Data]
+GROUP BY Product
+
+Q2 Find the number of sales transaction in each region
+SELECT Region, SUM(Quantity*UnitPrice) as Total_Sales
+FROM [dbo].[Sales Data]
+GROUP BY Region
+
+Q3 Find the highest-selling product by total sales value.
+SELECT Product,SUM(Quantity*UnitPrice) as Total_Sales
+FROM [dbo].[Sales Data]
+GROUP BY Product
+
+Q4 Calculate total revenue per product..
+SELECT Product,SUM(Revenue) As Total_Revenue
+FROM [dbo].[Sales Data]
+GROUP BY Product
+
+--ALTER TABLE[dbo].[Sales Data]
+--ADD OrderMonth nvarchar(50)
+--UPDATE [dbo].[Sales Data]
+--SET OrderMonth = DATENAME (MONTH, OrderDate)
+
+
+--ALTER TABLE[dbo].[Sales Data]
+--ADD OrderYear int
+
+--UPDATE[dbo].[Sales Data]
+--SET OrderYear = Year(OrderDate)
+---Revenue Column---
+---ALTER TABLE[dbo].[Sales Data]
+--ADD Revenue int
+---UPDATE[dbo].[Sales Data]
+---SET Revenue = (Quantity*UnitPrice)
+
+
+SELECT*
+FROM[dbo].[Sales Data]
+
+--Q5 Calculate monthly sales totals for the current year (2024)--
+SELECT OrderMonth,
+SUM(Quantity*UnitPrice) as Total_Sales
+FROM [dbo].[Sales Data]
+WHERE OrderYear = 2024
+GROUP BY OrderMonth
+
+---Q6 find the top 5 customers by total purchase amount
+SELECT Top 5 Customer_Id, SUM(Quantity) AS Total_Purchase
+FROM[dbo].[Sales Data]
+GROUP By Customer_Id
+ORDER BY Total_Purchase DESC
+
+---Q7 calculate the percentage of total sales contributed by each region.
+SELECT Region,SUM(Revenue)/SUM(Quantity*UnitPrice)*0.1 AS Percentage_of_Total_Sales
+FROM[dbo].[Sales Data]
+GROUP BY Region
+ORDER BY Percentage_of_Toal_Sales
+
+---Q8 identify product with no sales in the last quarter
+SELECT Product,SUM(Quantity) AS Sales
+FROM [dbo].[Sales Data]
+WHERE MONTH(OrderDate) BETWEEN 10 AND 12 -- Months 10, 11, and 12 (October to December)
+GROUP BY Product
+HAVING SUM(Quantity)=0
+
+SELECT*
+FROM[dbo].[Sales Data]
+```
+### Data Visualization
