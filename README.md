@@ -108,7 +108,7 @@ SELECT*
 FROM[dbo].[Sales Data]
 ```
 ### Data Visualization
-![Screenshot (1)](https://github.com/user-attachments/assets/33c45f6f-5575-464f-bec0-2c93bcf1b2d4)
+https://github.com/Dammy4422/LITA-PROJECT/blob/main/Screenshot%20(1).png
 
 
 
