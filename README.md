@@ -1,4 +1,4 @@
-# LITA-PROJECT
+![Screenshot (1)](https://github.com/user-attachments/assets/af0c8b7b-c3d8-4142-bda9-5d57233281c7)# LITA-PROJECT
 ## PROJECT TITLE : SALES PERFORMANCE ANALYSIS
 ### Table of content
 ### Project Overview
@@ -108,6 +108,7 @@ SELECT*
 FROM[dbo].[Sales Data]
 ```
 ### Data Visualization
+![Screenshot (1)](https://github.com/user-attachments/assets/33c45f6f-5575-464f-bec0-2c93bcf1b2d4)
 
 
 
