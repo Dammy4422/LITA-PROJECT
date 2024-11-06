@@ -209,4 +209,4 @@ This is where we include some basic lines of codes oe queries or even some of th
 ```
 ### Data Visualization
 
-
+![Screenshot (2)](https://github.com/user-attachments/assets/caf5cf51-5ee6-4c9a-bd6f-54a181309199)
