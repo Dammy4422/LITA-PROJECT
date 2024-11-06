@@ -1,6 +1,13 @@
-![Screenshot (1)](https://github.com/user-attachments/assets/af0c8b7b-c3d8-4142-bda9-5d57233281c7)# LITA-PROJECT
-## PROJECT TITLE : SALES PERFORMANCE ANALYSIS
+# LITA-PROJECT
+## PROJECT TITLE 1 : SALES PERFORMANCE ANALYSIS
 ### Table of content
+### Project Overview
+### Data Source
+### Tools Used
+### Data Cleaning and Preparation
+### Exploratory Data Analysis
+### Data Visualization
+
 ### Project Overview
 The Data Analysis projects aims to generate insights to the Sales performance project over the past years. By analyzing the various parameter in the data received we seek to gather enough insight to make reasonable decisions which then enable us to compelling stories around our data from insight gotten and to know the best performance  from our data
 
@@ -30,7 +37,7 @@ Calculating average sales per product and total revenue
 Retrieving Total Salres for each product
 Sales Overview etc
 
-### Data Analysis
+### Exploratory Data Analysis
 This is where we include some basic lines of codes oe queries or even some of the DAX expression used during the analysis
 
 ```SQL
@@ -108,7 +115,14 @@ SELECT*
 FROM[dbo].[Sales Data]
 ```
 ### Data Visualization
-https://github.com/Dammy4422/LITA-PROJECT/blob/main/Screenshot%20(1).png
+![Screenshot (1)](https://github.com/user-attachments/assets/af0c8b7b-c3d8-4142-bda9-5d57233281c7)
+
+
+## PROJECT TITLE 2 : CUSTOMERS SEGMENTATION FOR A RETAIL STORE
+### Table of content
+### Project Overview
+
+
 
 
 
